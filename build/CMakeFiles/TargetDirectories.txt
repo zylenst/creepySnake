@@ -1,0 +1,3 @@
+/Users/saadnaik/Documents/Learning/creepySnake/build/CMakeFiles/CreepySnake.dir
+/Users/saadnaik/Documents/Learning/creepySnake/build/CMakeFiles/edit_cache.dir
+/Users/saadnaik/Documents/Learning/creepySnake/build/CMakeFiles/rebuild_cache.dir
