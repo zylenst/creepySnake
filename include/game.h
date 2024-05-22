@@ -9,7 +9,7 @@ class Game {
 public:
     Game();
     void run();
-    float jump = 5.;
+    float speed = 0.05;
 
 private:
     void processEvents();

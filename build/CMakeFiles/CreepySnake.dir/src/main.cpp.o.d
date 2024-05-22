@@ -953,4 +953,11 @@ CMakeFiles/CreepySnake.dir/src/main.cpp.o: \
   /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Graphics/Text.hpp \
   /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Graphics/VertexBuffer.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
+  /Users/saadnaik/Documents/Learning/creepySnake/src/renderEngine.cpp \
+  /Users/saadnaik/Documents/Learning/creepySnake/src/events.cpp \
+  /Users/saadnaik/Documents/Learning/creepySnake/src/eventHandler.cpp \
+  /Users/saadnaik/Documents/Learning/creepySnake/src/runner.cpp \
+  /Users/saadnaik/Documents/Learning/creepySnake/src/frameUpdater.cpp \
+  /Users/saadnaik/Documents/Learning/creepySnake/src/init.cpp \
+  /Users/saadnaik/Documents/Learning/creepySnake/src/inputHandler.cpp
