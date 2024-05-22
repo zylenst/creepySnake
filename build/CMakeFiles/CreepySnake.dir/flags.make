@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -DSFML_STATIC
 
-CXX_INCLUDES = -isystem /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include
+CXX_INCLUDES = -I/Users/saadnaik/Documents/Learning/creepySnake/include -isystem /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include
 
 CXX_FLAGS = -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
 

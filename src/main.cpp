@@ -2,13 +2,16 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
+
+float speed = 0.05;
 
 Game::Game()
 : mWindow(sf::VideoMode(800, 600), "Creepy Snake")
 , mSnakeSegment(10.f)
 , mFood(10.f)
-, mDirection(10.f, 0.f)
-, mMoveInterval(sf::seconds(speed()))
+, mDirection(5.f, 0.f)
+, mMoveInterval(sf::seconds(speed))
 , mIsMovingUp(false)
 , mIsMovingDown(false)
 , mIsMovingLeft(false)
@@ -16,7 +19,7 @@ Game::Game()
 , mIsCreepyMode(false)
 {
     mSnakeSegment.setFillColor(sf::Color::Green);
-    mFood.setFillColor(sf::Color::Red);
+    mFood.setFillColor(sf::Color::Yellow);
     mSnake.push_back(sf::Vector2f(400.f, 300.f));
     spawnFood();
     std::srand(std::time(nullptr));
@@ -53,20 +56,20 @@ void Game::update(sf::Time deltaTime) {
     if (mTimeSinceLastMove >= mMoveInterval) {
         mTimeSinceLastMove = sf::Time::Zero;
 
-        if (mIsMovingUp && mDirection.y == 0.f) {
-            mDirection = mIsCreepyMode ? sf::Vector2f(0.f, 10.f) : sf::Vector2f(0.f, -10.f);
-        } else if (mIsMovingDown && mDirection.y == 0.f) {
-            mDirection = mIsCreepyMode ? sf::Vector2f(0.f, -10.f) : sf::Vector2f(0.f, 10.f);
-        } else if (mIsMovingLeft && mDirection.x == 0.f) {
-            mDirection = mIsCreepyMode ? sf::Vector2f(10.f, 0.f) : sf::Vector2f(-10.f, 0.f);
-        } else if (mIsMovingRight && mDirection.x == 0.f) {
-            mDirection = mIsCreepyMode ? sf::Vector2f(-10.f, 0.f) : sf::Vector2f(10.f, 0.f);
+        if (mIsMovingUp) {
+            mDirection = mIsCreepyMode ? sf::Vector2f(0.f, 5.f) : sf::Vector2f(0.f, -5.f);
+        } else if (mIsMovingDown) {
+            mDirection = mIsCreepyMode ? sf::Vector2f(0.f, -5.f) : sf::Vector2f(0.f, 5.f);
+        } else if (mIsMovingLeft) {
+            mDirection = mIsCreepyMode ? sf::Vector2f(5.f, 0.f) : sf::Vector2f(-5.f, 0.f);
+        } else if (mIsMovingRight) {
+            mDirection = mIsCreepyMode ? sf::Vector2f(-5.f, 0.f) : sf::Vector2f(5.f, 0.f);
         }
 
-        for (std::size_t i = mSnake.size() - 1; i > 0; --i) {
-            mSnake[i] = mSnake[i - 1];
-        }
-        mSnake[0] += mDirection;
+        for (std::size_t i = mSnake.size() - 1; i > 0; --i) { //Moves Each segment
+            mSnake[i] = mSnake[i - 1];                        //of snake
+        }                                                     //in the required direction
+        mSnake[0] += mDirection;                              //by updating mDirection vector
 
         checkCollisions();
 
@@ -90,6 +93,7 @@ void Game::render() {
     for (const auto& segment : mSnake) {
         mSnakeSegment.setPosition(segment);
         mWindow.draw(mSnakeSegment);
+        std::cout<<speed;
     }
 
     mWindow.draw(mFood);
@@ -114,16 +118,17 @@ void Game::spawnFood() {
 
 void Game::checkCollisions() {
     if (mSnake[0] == mFood.getPosition()) {
-        mSnake.push_back(mSnake.back());
+        mSnake.push_back(sf::Vector2f(400.f, 300.f));
         spawnFood();
+        speed = speed - speed/2.f;
     }
 
-    for (std::size_t i = 1; i < mSnake.size(); ++i) {
-        if (mSnake[0] == mSnake[i]) {
-            mSnake = { mSnake[0] };
-            break;
-        }
-    }
+    // for (std::size_t i = 1; i < mSnake.size(); ++i) {
+    //     if (mSnake[0] == mSnake[i]) {
+    //         mSnake = { mSnake[0] };
+    //         break;
+    //     }
+    // }
 }
 
 void Game::toggleCreepyMode() {

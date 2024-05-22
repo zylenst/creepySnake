@@ -880,7 +880,7 @@ CMakeFiles/CreepySnake.dir/src/main.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
- /Users/saadnaik/Documents/Learning/creepySnake/src/game.h
+ /Users/saadnaik/Documents/Learning/creepySnake/include/game.h
  /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Config.hpp
  /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Graphics.hpp
  /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Graphics/BlendMode.hpp

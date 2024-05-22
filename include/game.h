@@ -3,11 +3,13 @@
 
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include <iostream>
 
 class Game {
 public:
     Game();
     void run();
+    float jump = 5.;
 
 private:
     void processEvents();

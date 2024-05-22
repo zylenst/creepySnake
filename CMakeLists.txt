@@ -12,6 +12,7 @@ find_package(SFML 2.5 COMPONENTS system window graphics REQUIRED)
 
 # Add include directories
 include_directories(${SFML_INCLUDE_DIRS})
+include_directories(include)
 
 # Add the executable
 add_executable(CreepySnake src/main.cpp include/game.h)

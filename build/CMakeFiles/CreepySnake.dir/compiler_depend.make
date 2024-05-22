@@ -879,7 +879,7 @@ CMakeFiles/CreepySnake.dir/src/main.cpp.o: /Users/saadnaik/Documents/Learning/cr
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
-  /Users/saadnaik/Documents/Learning/creepySnake/src/game.h \
+  /Users/saadnaik/Documents/Learning/creepySnake/include/game.h \
   /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Config.hpp \
   /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Graphics.hpp \
   /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Graphics/BlendMode.hpp \
@@ -1031,6 +1031,8 @@ CMakeFiles/CreepySnake.dir/src/main.cpp.o: /Users/saadnaik/Documents/Learning/cr
 /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/System/Lock.hpp:
 
 /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Graphics/BlendMode.hpp:
+
+/Users/saadnaik/Documents/Learning/creepySnake/include/game.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h:
 
@@ -2833,8 +2835,6 @@ CMakeFiles/CreepySnake.dir/src/main.cpp.o: /Users/saadnaik/Documents/Learning/cr
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_replace_if.h:
-
-/Users/saadnaik/Documents/Learning/creepySnake/src/game.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_object.h:
 

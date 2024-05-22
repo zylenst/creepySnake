@@ -1,6 +1,6 @@
 CMakeFiles/CreepySnake.dir/src/main.cpp.o: \
   /Users/saadnaik/Documents/Learning/creepySnake/src/main.cpp \
-  /Users/saadnaik/Documents/Learning/creepySnake/src/game.h \
+  /Users/saadnaik/Documents/Learning/creepySnake/include/game.h \
   /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Graphics.hpp \
   /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/Window.hpp \
   /Users/saadnaik/Documents/Learning/creepySnake/vcpkg/installed/x64-osx/include/SFML/System.hpp \
