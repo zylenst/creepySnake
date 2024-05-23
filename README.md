@@ -1,2 +1,2 @@
 # creepySnake
-Just for you
+**This repo has two branches dedicated for OSX and for Windows
