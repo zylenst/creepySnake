@@ -69,8 +69,8 @@ Set CMAKE_TOOLCHAIN_FILE to vcpkg/scripts/buildsystems/vcpkg.cmake.
 ```
 
 
-Click on "Generate" and then "Open Project".
-In Visual Studio, build the project by selecting "Build > Build Solution".
+Build the CMAKE project and open .sln file.
+In Visual Studio, build the file by selecting "Build > Build Solution" or Ctrl+Shift+B.
 
 # Running the Game
 After building, you can run the game from Visual Studio or by navigating to the build directory and running the executable in Debig folder:
