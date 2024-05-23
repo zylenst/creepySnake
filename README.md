@@ -38,8 +38,7 @@ Before you begin, ensure you have met the following requirements:
 
 **Step 4: Install SFML via vcpkg**
 - Use vcpkg to install SFML:
-
-``` .\vcpkg install sfml:x64-windows ```  
+  ``` .\vcpkg install sfml:x64-windows ```  
 
 **Step 5: Integrate vcpkg with CMake**
 - Integrate vcpkg with CMake:
