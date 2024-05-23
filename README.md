@@ -1,6 +1,6 @@
-**README for Windows Branch**
+# README for Windows Branch
 
-**CreepySnake Game (Windows)**
+# CreepySnake Game (Windows)
 
 This project is a simple yet professionally built snake game using SFML. It is designed to help students understand the basics of game development and C++ programming. The installation and build process is straightforward, ensuring ease of use for educational   purposes.
 
